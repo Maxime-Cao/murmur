@@ -1,0 +1,71 @@
+package org.helmo.reseau.domains;
+
+import java.util.List;
+
+public class User {
+    private final String login;
+    private final String bcryptHash;
+    private final int bcryptRound;
+    private final String bcryptSalt;
+    private final List<String> followers;
+    private final List<String> userTags;
+    private final int lockoutCounter;
+
+    public User(String login, String bcryptHash, int bcryptRound, String bcryptSalt, List<String> followers, List<String> userTags, int lockoutCounter) {
+        this.login = login;
+        this.bcryptHash = bcryptHash;
+        this.bcryptRound = bcryptRound;
+        this.bcryptSalt = bcryptSalt;
+        this.followers = followers;
+        this.userTags = userTags;
+        this.lockoutCounter = lockoutCounter;
+    }
+
+
+    public String getLogin() {
+        return login;
+    }
+
+    public String getBcryptHash() {
+        return bcryptHash;
+    }
+
+
+    public int getBcryptRound() {
+        return bcryptRound;
+    }
+
+
+    public String getBcryptSalt() {
+        return bcryptSalt;
+    }
+
+
+    public List<String> getFollowers() {
+        return followers;
+    }
+
+
+    public void addFollower(String user) {
+        this.followers.add(user);
+    }
+
+    public List<String> getUserTags() {
+        return userTags;
+    }
+
+
+    public int getLockoutCounter() {
+        return lockoutCounter;
+    }
+
+
+    public void addFollowedTag(String tagName) {
+        this.userTags.add(tagName);
+    }
+
+
+    public boolean isFollowed(String follow) {
+        return this.followers.contains(follow);
+    }
+}

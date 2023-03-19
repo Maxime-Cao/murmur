@@ -1,0 +1,12 @@
+{
+  "currentDomain": "server1.godswila.guru",
+  "saltSizeInBytes": 16,
+  "multicastAddress": "224.1.1.255",
+  "multicastPort": 23001,
+  "unicastPort": 12020,
+  "relayPort": 12005,
+  "base64AES": "P3FXqAUgfhy5cTjYdWlPQBJ/d6fdpbR88YsDPWPbo14\u003d",
+  "tls": true,
+  "users": [],
+  "tags": []
+}
