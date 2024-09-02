@@ -1,4 +1,4 @@
-# MurMur Project
+# Murmur Project
 
 ## Explications et consignes du projet
 https://drive.google.com/file/d/1d16wxncN3LYuVp_kb-VccmFP3Gsdsho-/view?usp=sharing
